@@ -1,0 +1,35 @@
+Departments
+-
+department_no PK 
+department_name
+
+Dept_Emp
+-
+employee_no PK FK >- Employees.employee_no
+department_no PK FK >- Departments.department_no
+
+Dept_Manager
+-
+department_no PK FK >- Departments.department_no
+employee_no PK FK >- Employees.employee_no
+
+Employees
+-
+employee_no PK 
+title_id FK >- Title.title_id
+bitrh_date
+first_name
+last_name
+sex
+hire_date
+
+Salaries
+-
+employee_no PK FK - Employees.employee_no
+salary
+
+Title
+-
+title_id PK 
+title
+
